@@ -6,8 +6,25 @@
   console.log(columns)
 </script>
 
-{#each columns as column}
-  {#each column.content as columnContent}
-    <ComponentsController activeComponent={columnContent.type} content={columnContent.content} />
+<div class="columns">
+  {#each columns as column}
+    <div class="column">
+      {#each column.content as columnContent}
+        <ComponentsController activeComponent={columnContent.type} content={columnContent.content} />
+      {/each}
+    </div>
   {/each}
-{/each}
+</div>
+
+<style>
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -.75rem;
+}
+.column {
+  flex-basis: 17rem;
+  flex-grow: 1;
+  margin: .75rem;
+}
+</style>
