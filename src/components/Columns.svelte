@@ -27,4 +27,9 @@
   flex-grow: 1;
   margin: .75rem;
 }
+:global(.column svg) {
+  height: auto;
+  max-width: 100%;
+  width: 8rem;
+}
 </style>
