@@ -1,5 +1,6 @@
 <script>
-  import {fade} from 'svelte/transition'
+  import { fade } from 'svelte/transition';
+  import { sineInOut } from 'svelte/easing';
   import ComponentsController from './ComponentsController.svelte';
 
   export let slides;
@@ -10,7 +11,7 @@
   {#each slides as slide, i}
     <section class="container slide">
       {#if activeSlide === i}
-        <div transition:fade>
+        <div transition:fade={{ duration: 300, easing: sineInOut }}>
           {#each slide.body as item}
             <ComponentsController activeComponent={item.type} content={item.content} />
           {/each}
