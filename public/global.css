@@ -97,3 +97,27 @@ select {
 	position: relative;
 	width: 120ch;
 }
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('IBM Plex Sans Bold'), local('IBMPlexSansBold'), url('/fonts/IBMPlexSans-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('IBM Plex Sans'), local('IBMPlexSans'), url('/fonts/IBMPlexSans-Regular.woff') format('woff');
+}
+
+html {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
