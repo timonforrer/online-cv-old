@@ -4,6 +4,14 @@ import commonjs from 'rollup-plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import svelteSVG from "rollup-plugin-svelte-svg";
+import postcss from 'rollup-plugin-postcss';
+
+// PostCSS plugins
+import cssimport from 'postcss-import';
+import simplevars from 'postcss-simple-vars';
+import nested from 'postcss-nested';
+import cssnext from 'postcss-cssnext';
+import cssnano from 'cssnano';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -16,14 +24,26 @@ export default {
 		file: 'public/build/bundle.js'
 	},
 	plugins: [
+		postcss({
+			extract: 'global.css',
+			plugins: [
+				cssimport(),
+				simplevars(),
+        nested(),
+        cssnext({ warnForDuplicates: false, }),
+        cssnano()
+			],
+			extensions: ['.css']
+		}),
 		svelteSVG(),
 		svelte({
 			// enable run-time checks when not in production
 			dev: !production,
 			// we'll extract any component CSS out into
 			// a separate file — better for performance
+			emitCss: true,
 			css: css => {
-				css.write('public/build/bundle.css');
+				css.write('public/bundle.css');
 			}
 		}),
 		// If you have external dependencies installed from
