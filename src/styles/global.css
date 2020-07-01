@@ -26,6 +26,12 @@
   --c-background: var(--c-tertiary-300);
 }
 
+html {
+  font-family: 'IBM Plex Sans';
+  font-size: calc(0.333vw + 1rem);
+  font-weight: 400;
+}
+
 /* Handy utilities */
 
 .container {
