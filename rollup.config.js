@@ -10,7 +10,7 @@ import postcss from 'rollup-plugin-postcss';
 import cssimport from 'postcss-import';
 import simplevars from 'postcss-simple-vars';
 import nested from 'postcss-nested';
-import cssnext from 'postcss-cssnext';
+import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
 
 const production = !process.env.ROLLUP_WATCH;
@@ -29,8 +29,8 @@ export default {
 			plugins: [
 				cssimport(),
 				simplevars(),
-        nested(),
-        cssnext({ warnForDuplicates: false, }),
+				nested(),
+				autoprefixer,
         cssnano()
 			],
 			extensions: ['.css']
