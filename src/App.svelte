@@ -8,6 +8,8 @@
   import "firebase/performance";
   import firebaseConfig from '../firebase-config.js';
 
+  import './styles/global.css';
+
   import SlidesController from './SlidesController.svelte';
   
   firebase.initializeApp(firebaseConfig);
