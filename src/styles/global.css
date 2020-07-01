@@ -1,6 +1,8 @@
-@import './reset.css';
+@import './_reset.css';
+@import './_typography.css';
 
 @import './components/button.css';
+@import './components/columns.css';
 
 /* Variables */
 
@@ -24,10 +26,20 @@
   --c-font-inverted: var(--c-tertiary-300);
 
   --c-background: var(--c-tertiary-300);
+
+  --size-100: 0.16rem;
+  --size-200: 0.4rem;
+  --size-300: 0.8rem;
+  --size-400: 1.6rem;
+  --size-500: 4rem;
+  --size-600: 6rem;
+  --size-700: 8rem;
+  --size-800: 14rem;
+  --size-900: 32rem;
 }
 
 html {
-  font-family: 'IBM Plex Sans';
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: calc(0.333vw + 1rem);
   font-weight: 400;
 }
@@ -41,29 +53,14 @@ html {
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 	position: relative;
-	width: 120ch;
+	width: 100ch;
 }
 
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local('IBM Plex Sans Bold'), local('IBMPlexSansBold'), url('/fonts/IBMPlexSans-Bold.woff') format('woff');
+.stack {
+  &--100 > * ~ * { margin-top: var(--size-100) }
+  &--200 > * ~ * { margin-top: var(--size-200) }
+  &--300 > * ~ * { margin-top: var(--size-300) }
+  &--400 > * ~ * { margin-top: var(--size-400) }
+  &--500 > * ~ * { margin-top: var(--size-500) }
 }
 
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('IBM Plex Sans'), local('IBMPlexSans'), url('/fonts/IBMPlexSans-Regular.woff') format('woff');
-}
-
-html {
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-
-h1, h2, h3 {
-  font-weight: 700;
-}
