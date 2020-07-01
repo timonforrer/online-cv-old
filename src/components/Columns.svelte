@@ -15,21 +15,3 @@
     </div>
   {/each}
 </div>
-
-<style>
-.columns {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -.75rem;
-}
-.column {
-  flex-basis: 17rem;
-  flex-grow: 1;
-  margin: .75rem;
-}
-:global(.column svg) {
-  height: auto;
-  max-width: 100%;
-  width: 8rem;
-}
-</style>
