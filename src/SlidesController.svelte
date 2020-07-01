@@ -22,8 +22,20 @@
 
   <div class="controls">
     <div class="container">
-      <button disabled="{activeSlide <= 0}" on:click={e => activeSlide -= 1}>Previous</button>
-      <button disabled="{activeSlide >= (slides.length-1)}" on:click={e => activeSlide += 1}>Next</button>
+      <button
+        class="button button--regular" 
+        disabled="{activeSlide <= 0}" 
+        on:click={e => activeSlide -= 1}
+      >
+        Previous
+      </button>
+      <button
+        class="button button--regular" 
+        disabled="{activeSlide >= (slides.length-1)}" 
+        on:click={e => activeSlide += 1}
+      >
+        Next
+      </button>
     </div>
   </div>
 </div>
