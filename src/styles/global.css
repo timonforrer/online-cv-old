@@ -1,0 +1,63 @@
+@import './reset.css';
+
+@import './components/button.css';
+
+/* Variables */
+
+:root {
+  --soft-shadow: 0px 50px 100px rgba(0, 0, 0, 0.1);
+
+  --c-secondary-100: #121212;
+  --c-secondary-200: #151715;
+  --c-secondary-300: #1E231E;
+
+  --c-primary-100: #6CCC5C;
+  --c-primary-200: #62E650;
+  --c-primary-300: #78FA61;
+
+  --c-tertiary-100: #93E683;
+  --c-tertiary-200: #C5EABF;
+  --c-tertiary-300: #F8F9F6;
+
+  --c-font-main: var(--c-secondary-200);
+  --c-font-secondary: var(--c-secondary-100);
+  --c-font-inverted: var(--c-tertiary-300);
+
+  --c-background: var(--c-tertiary-300);
+}
+
+/* Handy utilities */
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	position: relative;
+	width: 120ch;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('IBM Plex Sans Bold'), local('IBMPlexSansBold'), url('/fonts/IBMPlexSans-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('IBM Plex Sans'), local('IBMPlexSans'), url('/fonts/IBMPlexSans-Regular.woff') format('woff');
+}
+
+html {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
