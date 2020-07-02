@@ -1,0 +1,33 @@
+section.slide {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:  0;
+  height: fit-content;
+  padding-block-end: 10rem;
+  padding-block-start: 3rem;
+  padding-block-start: calc(2vw + var(--size-400));
+  position: absolute;
+}
+
+.controls {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(.5rem);
+  background-color: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+}
+
+.controls .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -.25rem -.75rem;
+}
+
+.controls .wrapper > * {
+  margin: .25rem .75rem;
+}

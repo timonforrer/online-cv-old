@@ -1,0 +1,29 @@
+.quote {
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  max-width: 26rem;
+  position: relative;
+
+  &::before,
+  &::after {
+    color: var(--c-tertiary-200);
+    cursor: default;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1.5rem;
+    position: absolute;
+    user-select: none;
+    z-index: -1;
+  }
+
+  &::before {
+    content: '«';
+    margin-inline-start: -1rem;
+    margin-block-start: -.5rem;
+  }
+  &::after {
+    content: '»';
+    margin-inline-start: -1rem;
+    margin-block-start: .5rem;
+  }
+}
