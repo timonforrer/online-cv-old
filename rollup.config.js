@@ -8,7 +8,7 @@ import postcss from 'rollup-plugin-postcss';
 
 // PostCSS plugins
 import cssimport from 'postcss-import';
-import simplevars from 'postcss-simple-vars';
+import customproperties from 'postcss-custom-properties';
 import nested from 'postcss-nested';
 import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
@@ -28,7 +28,7 @@ export default {
 			extract: 'global.css',
 			plugins: [
 				cssimport(),
-				simplevars(),
+				customproperties({ preserve: false }),
 				nested(),
 				autoprefixer,
         cssnano()
