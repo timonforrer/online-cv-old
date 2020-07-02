@@ -11,11 +11,13 @@
   {#each slides as slide, i}
     {#if activeSlide === i}
       <section class="container slide {slide.layout ? slide.layout : ''}">
-        <div transition:fade={{ duration: 300, easing: sineInOut }}>
+        <!-- <div transition:fade={{ duration: 300, easing: sineInOut }}> -->
+        <div>
           {#each slide.body as item}
             <ComponentsController activeComponent={item.type} content={item.content} />
           {/each}
         </div>
+        <!-- </div> -->
       </section>
     {/if}
   {/each}
