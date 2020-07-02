@@ -1,5 +1,5 @@
 <script>
-  export let content;
+  export let content = '';
 </script>
 
 <h2>{content}</h2>
