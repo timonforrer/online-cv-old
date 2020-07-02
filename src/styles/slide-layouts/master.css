@@ -1,13 +1,14 @@
 section.slide {
-  top: 0;
+  /*top: 0;
   right: 0;
   bottom: 0;
   left:  0;
   height: fit-content;
+  padding-bottom: 7rem;
+  position: absolute;*/
   padding-block-end: 10rem;
   padding-block-start: 3rem;
   padding-block-start: calc(2vw + var(--size-400));
-  position: absolute;
 }
 
 .controls {
