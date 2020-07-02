@@ -2,4 +2,4 @@
   export let content;
 </script>
 
-<blockquote>{content}</blockquote>
+<blockquote class="lead quote">{content}</blockquote>
