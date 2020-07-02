@@ -3,7 +3,7 @@ section.slide.home {
   display: flex;
   justify-content: center;
   padding-block-start: 5rem;
-  padding-block-start: calc(10vw + var(--size-500));
+  /*padding-block-start: calc(10vw + var(--size-500));*/
   text-align: center;
 
   & svg + b {
