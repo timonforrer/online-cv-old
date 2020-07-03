@@ -3,7 +3,6 @@
   let columns = content;
 
   import ComponentsController from '../ComponentsController.svelte';
-  console.log(columns)
 </script>
 
 <div class="columns">
