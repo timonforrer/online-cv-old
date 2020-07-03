@@ -6,9 +6,9 @@
   export let url = '';
   const baseUrl = 'https://res.cloudinary.com/dcx8f5ez0/image/upload/'
   const urls = {
-    phone: `${baseUrl}/t_phone/${imagePathPartial}`,
-    tablet: `${baseUrl}/t_tablet/${imagePathPartial}`,
-    desktop: `${baseUrl}/t_desktop/${imagePathPartial}`
+    phone: `${baseUrl}t_phone${imagePathPartial}`,
+    tablet: `${baseUrl}t_tablet${imagePathPartial}`,
+    desktop: `${baseUrl}t_desktop${imagePathPartial}`
   }
 </script>
 
@@ -27,7 +27,7 @@
       <h2>{title}</h2>
     </div>
     <div class="stack--300">
-      <a href="{url}" class="button button--primary">Website ansehen</a>
+      <a href="{url}" target="blank" rel="noreferrer noopener" class="button button--primary">Website ansehen</a>
     </div>
   </div>
 </div>
