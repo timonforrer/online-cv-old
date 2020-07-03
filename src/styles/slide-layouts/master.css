@@ -11,11 +11,16 @@ section.slide {
   padding-block-start: calc(2vw + var(--size-400));
 
   & > div > h1 + * {
+    display: block;
     margin-block-start: calc(2vw + var(--size-400));
   }
 
   & > div > * ~ * {
     margin-block-start: calc(5vw + var(--size-700));
+  }
+
+  & > div > * ~ p {
+    margin-block-start: calc(1vw + var(--size-200));
   }
 }
 
