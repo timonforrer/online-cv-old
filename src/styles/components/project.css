@@ -1,0 +1,9 @@
+.technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -.5rem;
+
+  & > * {
+    margin: .5rem;
+  }
+}
