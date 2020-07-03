@@ -1,11 +1,20 @@
 <script>
-  import { fade } from 'svelte/transition';
-  import { sineInOut } from 'svelte/easing';
+  // import { fade } from 'svelte/transition';
+  // import { sineInOut } from 'svelte/easing';
   import ComponentsController from './ComponentsController.svelte';
 
   export let slides;
   let activeSlide = 0;
+  
+  let scrollPosition = 0;
+
+  function handleScroll(direction) {
+    activeSlide += direction;
+    scrollPosition = 0;
+  }
 </script>
+
+<svelte:window bind:scrollY={scrollPosition} />
 
 <div>
   {#each slides as slide, i}
@@ -28,14 +37,14 @@
         <button
           class="button button--regular" 
           disabled="{activeSlide <= 0}" 
-          on:click={e => activeSlide -= 1}
+          on:click={e => handleScroll(-1)}
         >
           Vorherige Seite
         </button>
         <button
           class="button button--regular" 
           disabled="{activeSlide >= (slides.length-1)}" 
-          on:click={e => activeSlide += 1}
+          on:click={e => handleScroll(+1)}
         >
           Nächste Seite
         </button>
