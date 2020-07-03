@@ -15,7 +15,7 @@ section.slide {
   }
 
   & > div > * ~ * {
-    margin-block-start: calc(5vw + var(--size-400));
+    margin-block-start: calc(5vw + var(--size-700));
   }
 }
 
