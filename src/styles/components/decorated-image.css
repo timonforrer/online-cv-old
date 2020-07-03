@@ -28,7 +28,7 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 30.86%, rgba(0, 0, 0, 0) 100%);
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 30.86%, rgba(0, 0, 0, 0) 100%);
       content: '';
       height: 100%;
       pointer-events: none;
