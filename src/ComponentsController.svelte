@@ -10,7 +10,10 @@
   import Columns from './components/Columns.svelte';
   import Icon from './components/Icon.svelte';
   import Lead from './components/Lead.svelte';
+  import List from './components/List.svelte';
   import Logo from './components/Logo.svelte';
+  import MegaCard from './components/MegaCard.svelte';
+  import Project from './components/Project.svelte';
   import Quote from './components/Quote.svelte';
   import Title from './components/Title.svelte';
 
@@ -22,7 +25,10 @@
     columns: Columns,
     icon: Icon,
     lead: Lead,
+    list: List,
     logo: Logo,
+    megacard: MegaCard,
+    project: Project,
     quote: Quote,
     title: Title
   }
