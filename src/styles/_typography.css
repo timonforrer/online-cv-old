@@ -21,6 +21,7 @@ h4,
 h5,
 h6 {
   color: var(--c-font-secondary);
+  hyphens: auto;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -55,6 +56,12 @@ h3 {
   letter-spacing: 0.16rem;
   font-size: 0.75rem;
   text-transform: uppercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-size: .75rem;
+  letter-spacing: 0.2em;
 }
 
 .wght-400 { font-weight: 400; }
