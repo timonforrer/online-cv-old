@@ -1,5 +1,5 @@
 .columns {
-  display: flex;
+  display: flex!important;
   flex-wrap: wrap;
   margin: -.75rem;
 }
