@@ -5,8 +5,12 @@
 @import './slide-layouts/home.css';
 
 @import './components/button.css';
-@import './components/logo.css';
 @import './components/columns.css';
+@import './components/decorated-image.css';
+@import './components/list.css';
+@import './components/logo.css';
+@import './components/mega-card.css';
+@import './components/project.css';
 @import './components/quote.css';
 
 /* Variables */
