@@ -1,9 +1,9 @@
 <script>
-  export let items = [];
+  export let content = [];
 </script>
 
 <ul class="checked-list">
-  {#each items as item}
+  {#each content as item}
     <li class="lead">{item}</li>
   {/each}
 </ul>

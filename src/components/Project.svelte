@@ -11,7 +11,7 @@
   <MegaCard {...content.megacard} />
 
   <div>
-    <List items={content.list} />
+    <List content={content.list} />
   </div>
 
   <div class="stack--200">
