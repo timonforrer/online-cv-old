@@ -9,6 +9,7 @@
 
   import Columns from './components/Columns.svelte';
   import Icon from './components/Icon.svelte';
+  import Image from './components/Image.svelte';
   import Lead from './components/Lead.svelte';
   import List from './components/List.svelte';
   import Logo from './components/Logo.svelte';
@@ -24,6 +25,7 @@
     p: P,
     columns: Columns,
     icon: Icon,
+    image: Image,
     lead: Lead,
     list: List,
     logo: Logo,
