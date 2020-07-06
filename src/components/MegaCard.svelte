@@ -12,13 +12,6 @@
   }
 </script>
 
-<!-- <div>
-  {imagePathPartial}
-  {projectType}
-  {title}
-  {url}
-</div> -->
-
 <div class="stack--400 mega-card">
   <DecoratedImage images={urls} />
   <div class="stack--300 mega-card__content">
