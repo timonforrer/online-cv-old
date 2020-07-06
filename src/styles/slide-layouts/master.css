@@ -28,7 +28,7 @@ section.slide {
   }
 
   /* Spacing for sections */
-  & > div > * ~ [class|=stack] {
+  & > div > [class|=stack] ~ [class|=stack] {
     margin-top: calc(5vw + var(--size-700));
   }
 

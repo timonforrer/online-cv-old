@@ -51,7 +51,10 @@ html {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: calc(0.333vw + 1rem);
   font-weight: 400;
-  position: relative;
+}
+
+main {
+  overflow-x: hidden;
 }
 
 /* Handy utilities */
