@@ -19,6 +19,8 @@
   let message;
 
   onMount(async () => {
+    message = 'Bitte warten: Authentifizierung läuft…';
+    auth.signOut();
     const {
       agency,
       token
@@ -34,7 +36,9 @@
 
 <main>
   {#if message}
-    {message}
+    <div class="container">
+      {message}
+    </div>
   {/if}
 
   <FirebaseApp {firebase}>
@@ -43,12 +47,10 @@
 
       <Collection path={`agencies/${user.uid}/slides`} let:data={slides}>
         <SlidesController {slides} />
-        <div slot="loading">loading collection</div>
-        <div slot="fallback">fallback</div>
-      </Collection>
 
-      <div slot="loading">auth pending</div>
-      <div slot="fallback">fallback</div>
+        <div slot="loading"><div class="container">Daten werden geladen</div></div>
+        <div slot="fallback"><div class="container">Daten konnten nicht geladen werden</div></div>
+      </Collection>
 
     </User>
 
