@@ -36,6 +36,6 @@ module.exports = async (req, res) => {
     res.status(200).send({ token: customToken });
   } else {
     // If not, send an error
-    res.status(400).send({ message: 'Authentication failed. Check agency name and token' });
+    res.status(400).send({ message: 'Authentifizierung fehlgeschlagen. Überprüfen Sie den Agentur-Namen und das Token' });
   }
 }
