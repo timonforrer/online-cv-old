@@ -5,6 +5,7 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import svelteSVG from "rollup-plugin-svelte-svg";
 import postcss from 'rollup-plugin-postcss';
+import babel from 'rollup-plugin-babel';
 
 // PostCSS plugins
 import cssimport from 'postcss-import';
@@ -65,7 +66,29 @@ export default {
 		// Watch the `public` directory and refresh the
 		// browser on changes when not in production
 		!production && livereload('public'),
-
+		
+		babel({
+      extensions: [ '.js', '.mjs', '.html', '.svelte' ],
+      runtimeHelpers: true,
+      exclude: [ 'node_modules/@babel/**' ],
+      presets: [
+        [
+          '@babel/preset-env',
+          {
+            targets: '> 0.25%, not dead'
+          }
+        ]
+      ],
+      plugins: [
+        '@babel/plugin-syntax-dynamic-import',
+        [
+          '@babel/plugin-transform-runtime',
+          {
+            useESModules: true
+          }
+        ]
+      ]
+    }),
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
 		production && terser()
