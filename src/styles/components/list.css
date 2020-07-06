@@ -2,7 +2,7 @@ ul.checked-list {
   list-style: none;
 
   & * ~ * {
-    margin-block-start: 1rem;
+    margin-top: 1rem;
   }
 
   & li {
@@ -16,8 +16,8 @@ ul.checked-list {
     display: inline-block;
     flex-shrink: 0;
     height: 32px;
-    margin-inline-end: .5rem;
-    margin-block-start: .125rem;
+    margin-right: .5rem;
+    margin-top: .125rem;
     width: 32px;
   }
 }

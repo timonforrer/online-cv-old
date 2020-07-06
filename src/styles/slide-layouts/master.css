@@ -6,21 +6,21 @@ section.slide {
   height: fit-content;
   padding-bottom: 7rem;
   position: absolute;*/
-  padding-block-end: 10rem;
-  padding-block-start: 3rem;
-  padding-block-start: calc(2vw + var(--size-400));
+  padding-bottom: 10rem;
+  padding-top: 3rem;
+  padding-top: calc(2vw + var(--size-400));
 
   & > div > h1 + * {
     display: block;
-    margin-block-start: calc(2vw + var(--size-400));
+    margin-top: calc(2vw + var(--size-400));
   }
 
   & > div > * ~ * {
-    margin-block-start: calc(5vw + var(--size-700));
+    margin-top: calc(5vw + var(--size-700));
   }
 
   & > div > * ~ p {
-    margin-block-start: calc(1vw + var(--size-200));
+    margin-top: calc(1vw + var(--size-200));
   }
 }
 
@@ -30,8 +30,8 @@ section.slide {
   left: 0;
   backdrop-filter: blur(.5rem);
   background-color: rgba(255, 255, 255, 0.6);
-  padding-block-start: 1rem;
-  padding-block-end: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   position: fixed;
   z-index: 100;
 }

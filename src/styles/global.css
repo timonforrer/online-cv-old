@@ -67,9 +67,9 @@ html {
 }
 
 .stack {
-  &--100 > * ~ * { margin-block-start: var(--size-100) }
-  &--200 > * ~ * { margin-block-start: var(--size-200) }
-  &--300 > * ~ * { margin-block-start: var(--size-300) }
-  &--400 > * ~ * { margin-block-start: var(--size-400) }
-  &--500 > * ~ * { margin-block-start: var(--size-500) }
+  &--100 > * ~ * { margin-top: var(--size-100) }
+  &--200 > * ~ * { margin-top: var(--size-200) }
+  &--300 > * ~ * { margin-top: var(--size-300) }
+  &--400 > * ~ * { margin-top: var(--size-400) }
+  &--500 > * ~ * { margin-top: var(--size-500) }
 }

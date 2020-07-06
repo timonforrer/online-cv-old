@@ -2,8 +2,8 @@
   display: block;
   overflow: visible;
   stroke: #151715;
-  margin-inline-end: auto;
-  margin-inline-start: auto;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 100%;
 
   & path {
