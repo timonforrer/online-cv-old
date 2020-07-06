@@ -9,19 +9,34 @@ section.slide {
   padding-bottom: 10rem;
   padding-top: 3rem;
   padding-top: calc(2vw + var(--size-400));
+  
+  /* Default spacing */
+  & > div > * ~ * {
+    margin-top: calc(1vw + var(--size-200));
+  }
 
+  /* Spacing for h1 */
   & > div > h1 + * {
     display: block;
     margin-top: calc(2vw + var(--size-400));
   }
 
-  & > div > * ~ * {
+  /* Spacing for h2 */
+  & > div > * + h2 {
+    display: block;
+    margin-top: calc(2vw + var(--size-300));
+  }
+
+  /* Spacing for sections */
+  & > div > * ~ [class|=stack] {
     margin-top: calc(5vw + var(--size-700));
   }
 
+  /* Spacing for paragraphs */
   & > div > * ~ p {
     margin-top: calc(1vw + var(--size-200));
   }
+
 }
 
 .controls {
