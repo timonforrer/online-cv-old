@@ -15,7 +15,7 @@
     "cssnano": "^4.1.10",
     "es6-shim": "^0.35.5",
     "firebase": "^7.5.2",
-    "firebase-admin": "^8.12.1",
+    "firebase-admin": "^11.4.1",
     "postcss-custom-properties": "^9.1.1",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
